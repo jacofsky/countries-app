@@ -1,10 +1,13 @@
-import { extendTheme } from "@chakra-ui/react";
+import { createTheme } from "@nextui-org/react"
 
-export const lightTheme = extendTheme({
+
+export const lightTheme = createTheme({
+  type: 'dark',
+  theme: {
     colors: {
-        main: 'hsl(0, 0%, 100%)',
+      primary: 'hsl(0, 0%, 100%)',
         input: 'hsl(0, 0%, 52%)',
-        bg: 'hsl(0, 0%, 98%)',
+        background: 'hsl(0, 0%, 98%)',
         text: 'hsl(200, 15%, 8%)',
         
     },
@@ -20,4 +23,5 @@ export const lightTheme = extendTheme({
         md: '14px',
         lg: '16px'
     }
+  }
 })
