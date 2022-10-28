@@ -6,7 +6,7 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <NextUIProvider theme={darkTheme}>
+    <NextUIProvider theme={lightTheme}>
       <CssBaseline/>
       <Component {...pageProps} />
     </NextUIProvider>

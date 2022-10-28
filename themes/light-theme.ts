@@ -2,10 +2,10 @@ import { createTheme } from "@nextui-org/react"
 
 
 export const lightTheme = createTheme({
-  type: 'dark',
+  type: 'light',
   theme: {
     colors: {
-      primary: 'hsl(0, 0%, 100%)',
+      primary: '#FFFFFF',
         input: 'hsl(0, 0%, 52%)',
         background: 'hsl(0, 0%, 98%)',
         text: 'hsl(200, 15%, 8%)',

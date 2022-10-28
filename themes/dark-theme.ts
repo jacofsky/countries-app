@@ -21,11 +21,6 @@ export const darkTheme = createTheme({
     fontSizes: {
       md: '14px',
       lg: '16px'
-    },
-    
-    
+    },  
   },
-  
-  
-  
 })
