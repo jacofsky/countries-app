@@ -2,7 +2,7 @@ import { createContext, FC, PropsWithChildren, useState, Dispatch, useEffect } f
 import { Country, Region } from '../interfaces';
 
 interface ContextProps {
-    setCountries: (countries: Country[]) => void
+  setCountries: (countries: Country[]) => void
     countriesShowing: Country[]
     changeRegion: (region: Region) => void
     serachCountry: (region: string) => void
@@ -18,9 +18,9 @@ export const CountriesProvider:FC<PropsWithChildren> = ({children}) => {
     const [countriesShowing, setCountriesShowing] = useState<Country[] | []>([])
 
     useEffect(() => {
-      
-      setCountriesShowing(countries)
-    }, [])
+      changeRegion('All')
+    
+    }, [countries])
     
 
 
