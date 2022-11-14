@@ -12,9 +12,7 @@ export const Layout: FC<PropsWithChildren<Props>> = ({children, title}) => {
         <Head>
             <title>{title}</title>
         </Head>
-        <nav>
-            <Navbar/>
-        </nav>
+        <Navbar/>
         <main style={{margin: '25px 5%'}}>
             {children}
         </main>
